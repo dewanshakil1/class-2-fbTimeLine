@@ -1,0 +1,397 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+input:focus {
+	outline: none;
+}
+.fb-header {
+	padding-top: 7px;
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 1;
+}
+.fb-band {
+	display: flex;
+}
+.fb-band a {
+	width: 57px;
+	height: 58px;
+	background-image: url(image/fb1.png);
+	display: inline-block;
+	position: 19px;
+	transform: scale(0.9);
+	background-position: 0px 1px;
+}
+.fb-band .search {
+	position: relative;
+	margin-left: -4px;
+	margin-top: 6px;
+}
+.fb-band .search input {
+	padding: 10px 5px 10px 32px;
+	font-size: 15px;
+	border-radius: 50px;
+	margin-top: 2px;
+	background-color: #f0f2f5;
+	border: none;
+	width: 250px;
+	color: black;
+}
+.fb-band .search button {
+	position: absolute;
+	border: none;
+	top: 13px;
+	left: 10px;
+}
+
+/* fb manu */
+
+.fb-menu ul {
+	margin-bottom: 0px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+}
+.fb-menu ul li {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.fb-menu ul li a {
+	display: block;
+	color: #65676b;
+}
+.fb-menu ul li.active a {
+	color: aqua;
+}
+.fb-menu ul li.active::before {
+	content: '';
+	width: 100%;
+	background-color: aqua;
+	height: 3px;
+	display: block;
+	position: absolute;
+	bottom: -11px;
+}
+.fb-auth ul {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	margin-top: 6px;
+}
+.fb-auth ul li {
+	margin: 0px 6px;
+}
+.fb-auth ul li img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.fb-auth ul li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #e4e6eb;
+	color: #050505;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 36px;
+}
+/* fb body start */
+.facbook-body {
+	background-color: #f0f2f5;
+	min-height: 100vh;
+	padding-top: 85px;
+}
+.facbook-body .list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 5px;
+	width: 100%;
+}
+.facbook-body .list img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.facbook-body .list-title {
+	margin-left: 10px;
+}
+.facbook-body .list:hover {
+	background-color: rgba(255, 255, 255, 0.819);
+}
+/* fb-story-aria */
+.fb-story-aria {
+	display: flex;
+	justify-content: space-between;
+}
+.fb-story-aria .story-box {
+	width: 120px;
+	height: 210px;
+	background-color: aqua;
+	border-radius: 10px;
+	padding: 10px;
+	background-size: auto 100%;
+	background-position: center;
+	cursor: pointer;
+	position: relative;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+	transition: 0.3s ease-in-out;
+}
+.fb-story-aria .story-box:hover {
+	background-size: auto 110%;
+}
+.fb-story-aria .story-box:nth-child(1) {
+	background-image: url('image/shakil.jpg');
+}
+.fb-story-aria .story-box:nth-child(2) {
+	background-image: url('image/story2.jpg');
+}
+.fb-story-aria .story-box:nth-child(3) {
+	background-image: url('image/story3.jpg');
+}
+.fb-story-aria .story-box:nth-child(4) {
+	background-image: url('image/story4.jpg');
+}
+.fb-story-aria .story-box:nth-child(5) {
+	background-image: url('image/story1.jpg');
+}
+.fb-story-aria .story-box .user-avata img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 3px solid green;
+	background-position: 1px;
+}
+.fb-story-aria .story-box span {
+	font-size: 15px;
+	color: white;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+.fb-story-aria .story-box .own-story {
+	background-color: white;
+	position: absolute;
+	padding: 0px 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	border-radius: 0px 0px 10px 10px;
+	text-align: center;
+}
+.fb-story-aria .story-box .own-story a {
+	background-color: #1876f2;
+	color: white;
+	width: 25px;
+	height: 25px;
+	font-weight: bold;
+	font-size: 27px;
+	line-height: 2px;
+	padding: 8px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 3px solid white;
+	box-sizing: content-box;
+	transform: translate(0px, -26px);
+}
+.fb-story-aria .story-box .own-story span {
+	color: #050505;
+	font-size: large;
+}
+/* contact sidebar */
+.contact-box .list {
+	display: flex;
+	margin-bottom: 12px;
+	flex-direction: row;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 5px;
+}
+.contact-box :hover {
+	background-color: rgba(255, 255, 255, 0.819);
+}
+.contact-box .list img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-position: 1px;
+}
+.contact-box .list::after {
+	content: '';
+	width: 8px;
+	height: 8px;
+	background-color: aqua;
+	position: absolute;
+	border-radius: 50%;
+	transform: translate(28px, 12px);
+}
+.contact-box span {
+	margin-top: 5px;
+	font-size: 17px;
+	font-weight: 500px;
+	margin-left: 9px;
+}
+/* post modal area */
+.post-modal-area .modal-button img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.post-modal-area .modal-button button {
+	margin-left: 10px;
+	border: none;
+	padding: 12px;
+	border-radius: 17px;
+	width: 89%;
+	text-align: left;
+	background-color: #f0f2f5;
+	color: #333;
+}
+.post-modal-area .modal-button button:hover {
+	background-color: rgba(0, 0, 0, 0.396);
+}
+.post-modal-area .card {
+	border-radius: 15px;
+}
+.icon-aria {
+	display: flex;
+	justify-content: space-around;
+	margin-top: -28px;
+}
+.icon-aria .icon-box {
+	flex: 1;
+	padding: 5px 2px;
+	margin-bottom: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+.icon-aria .icon-box svg {
+	font-size: 30px;
+}
+.icon-aria .icon-box:nth-child(1) svg {
+	color: red;
+}
+.icon-aria .icon-box:nth-child(2) svg {
+	color: green;
+}
+.icon-aria .icon-box:nth-child(3) svg {
+	color: pink;
+}
+.icon-aria .icon-box:hover {
+	background-color: rgba(0, 0, 0, 0.213);
+	border-radius: 30px;
+}
+.post-line-aria {
+}
+.post-line-aria .post-auth-ariea {
+	display: flex;
+	justify-content: space-between;
+}
+.post-line-aria .post-auth-ariea .user-info {
+	display: flex;
+}
+.post-line-aria .post-auth-ariea .user-info span {
+	display: block;
+	font-size: 13px;
+}
+.post-line-aria .post-auth-ariea .user-info span:nth-child(1) {
+	font-weight: bold;
+}
+.post-line-aria .post-auth-ariea .user-info img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.post-line-aria .post-auth-ariea button {
+	background-color: transparent;
+	border: none;
+	width: 38px;
+	height: 38px;
+	line-height: 17px;
+	border-radius: 50%;
+	font-size: 21px;
+	padding: 10px;
+}
+.modal-topbar {
+	display: flex;
+	justify-content: space-around;
+}
+.modal-topbar h2 {
+	color: #050505;
+}
+.modal-topbar button {
+	transform: translate(10px, 11px);
+	font-size: 22px;
+	width: 25px;
+	margin-left: 157px;
+	height: 25px;
+	border-radius: 50%;
+	border: none;
+	background-color: rgba(226, 211, 211, 0.947);
+}
+.modal-topbar button:hover {
+	border: none;
+}
+.loading {
+	width: 130px;
+	height: 130px;
+	margin: auto;
+	object-fit: cover;
+	display: block;
+	display: none;
+	position: fixed;
+	top: -54px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	background-color: white;
+}
+.post-line-aria .card {
+	border-radius: 20px;
+}
+.post-line-aria .post-auth-ariea button:hover {
+	background-color: #65676b;
+}
+.post-line-aria .post-auth-ariea button::after {
+	content: '';
+	display: none;
+}
+.post-content-aria img {
+	width: 100%;
+}
+.contact-icon-ariea {
+	display: flex;
+}
+.contact-icon-ariea h2 {
+	color: #65676b;
+}
+.contact-icon-box {
+	justify-content: space-around;
+	width: 100%;
+	color: #65676b;
+	display: flex;
+	transform: translate(10px, 11px);
+	font-size: 21px;
+	cursor: pointer;
+}
+/* .close-modal {
+	display: block;
+} */
